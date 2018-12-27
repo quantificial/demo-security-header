@@ -35,7 +35,7 @@ public class SecurityHeaderFilter implements Filter {
     	 url = ((HttpServletRequest)request).getRequestURL().toString();
     	 queryString = ((HttpServletRequest)request).getQueryString();
     	 
-    	 log.info(url);
+    	 log.info(url);	
     	 log.info(queryString);
     }
     

@@ -1,6 +1,8 @@
 package com.example.demoheader;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import org.apache.catalina.core.ApplicationContext;
 import org.springframework.beans.factory.ListableBeanFactory;
@@ -23,6 +25,13 @@ public class DemoHeaderApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		log.info("test");
+					
+		
+		List<String> s =  Arrays.asList("a","b","c");
+		
+		List<String> a = s.stream().map( v -> v.toUpperCase()).collect(Collectors.toList());
+		
+		
 		
 	}
 	
