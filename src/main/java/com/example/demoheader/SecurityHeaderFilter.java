@@ -47,7 +47,7 @@ public class SecurityHeaderFilter implements Filter {
     
     
     //httpServletResponse.setHeader("Content-Security-Policy", "script-src 'self' 'unsafe-eval'; object-src 'self'; frame-ancestors 'none'");
-    //httpServletResponse.setHeader("Content-Security-Policy", "script-src 'self'; object-src 'self'; frame-ancestors 'none'");
+    httpServletResponse.setHeader("Content-Security-Policy", "script-src 'self'; object-src 'self'; frame-ancestors 'none'");
     httpServletResponse.setHeader("X-Content-Type-Options", "nosniff");
     httpServletResponse.setHeader("X-Frame-Options", "DENY");
     httpServletResponse.setHeader("X-XSS-Protection", "1; mode=block");

@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.apache.catalina.core.ApplicationContext;
+//import org.apache.catalina.core.ApplicationContext;
 import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
